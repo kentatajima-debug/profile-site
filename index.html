@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アウト老のプロフィール</title>
+    <style>
+        /* ▼ここから下がCSS（見た目の指定） */
+        :root {
+            --theme-color: rgb(10, 128, 45);   /* ここでテーマカラーを1か所だけ決める */
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #f4f1ea;   /* 落ち着いたベージュの背景 */
+            color: #333333;              /* 文字は濃いグレー */
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;ß
+            margin: 0;
+        }
+        .card {
+            background-color: #ffffff;
+            max-width: 480px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            color: var(--theme-color);              /* 落ち着いた緑 */
+            margin-top: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: var(--theme-color);
+        }
+        a {
+            color: var(--theme-color);
+        }
+        li {
+            margin-bottom: 8px;   /* 項目同士に少し隙間をあける */
+        }
+        li::marker {
+            color: var(--theme-color);   /* 点の色をテーマカラーに */
+        }
+
+        h2 {
+            color: var(--theme-color);
+            border-bottom: 2px solid var(--theme-color);   /* 下に線を引く */
+            padding-bottom: 6px;     /* 文字と線の間に少し隙間 */
+            font-size: 1.1em;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0ddd5;   /* 薄いグレーの細い線 */
+            margin: 24px 0;                  /* 線の上下に余白 */
+        }
+        a {
+            text-decoration: none;   /* 普段は下線を消す */
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #013509;   /* 乗せたとき少し濃い色に */
+        }
+    </style>
+</head>
+<body>
+    <!-- ▼ここから下がHTML（ページの骨組み・中身） -->
+    <div class="card">
+    <h1>アウト老</h1>
+
+    <p class="label">趣味</p>
+    <ul>
+        <li>ゴルフ（ベストスコア更新が目標）</li>
+        <li>AIコーディング（このページも自作！）</li>
+        <li>ブログ（note.comで挑戦日記を連載中）</li>
+    </ul>
+
+    <p>退職後、AIコーディングに挑戦中の日々をブログに綴っています。</p>
+
+    hr {
+        border: none;
+        border-top: 1px solid #e0ddd5;   /* 薄いグレーの細い線 */
+        margin: 24px 0;                  /* 線の上下に余白 */
+    }
+
+    <h2>これまでに作ったもの</h2>
+    <ul>
+        <li>ゴルフスコア記録アプリ</li>
+        <li>英単語フラッシュカード（AI連携）</li>
+        <li>ファイル自動整理ツール</li>
+    </ul>
+
+    <p>
+        <span class="label">ブログ：</span>
+        <a href="https://note.com/prime_auk6455" target="_blank">アウト老の挑戦日記を読む</a>
+    </p>
+</div>
+    </div>
+</body>
+</html>
